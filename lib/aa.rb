@@ -13,7 +13,7 @@ class Aa
   class The
     def method_missing(name, *args, &block)
       super if !args.empty? || block
-      A.the(name)
+      Aa.the(name)
     end
   end
 end
